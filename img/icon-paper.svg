@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="Слой_1" xmlns="http://www.w3.org/2000/svg" version="1.1" space="preserve" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" height="44" width="31.812" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" y="0px" x="0px" viewBox="0 0 31.812037 44">
+ <metadata id="metadata3">
+  <sfw>
+   <slices/>
+   <sliceSourceBounds y="-115.078" width="110.16" bottomLeftOrigin="true" x="5.179" height="110.156"/>
+  </sfw>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="g5" transform="matrix(.69289 0 0 .69289 -24.966 -19.083)">
+  <g id="g9">
+   <g id="g11">
+    <path id="path13" fill="#fff" d="m54.228 27.541-18.197 17.712v45.79h45.912v-63.502h-27.715zm17.876 48.728h-25.936v-2.982h25.936v2.982zm0-9.687h-25.936v-2.984h25.936v2.984zm0-9.69h-25.936v-2.982h25.936v2.982z"/>
+   </g>
+   <polygon id="polygon15" points="54.228 27.541 54.228 45.253 36.031 45.253" fill="#e5e6e7"/>
+  </g>
+ </g>
+</svg>
