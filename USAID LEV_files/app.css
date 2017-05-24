@@ -4709,7 +4709,6 @@ a.b-change__link:hover, a.b-change__link:active {
     font-family: 'Open Sans', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
     color: #000;
     font-size: 16px;
-/*    line-height: 40px;*/
     font-weight: 700;
 }
 .b-training__text{
@@ -4717,7 +4716,6 @@ a.b-change__link:hover, a.b-change__link:active {
     margin-bottom: 20px;
 }
 .b-training__stages{
-/*    margin-bottom: 30px;*/
     padding: 0;
     counter-reset: stage;
     list-style: none;
@@ -4786,6 +4784,9 @@ a.b-change__link:hover, a.b-change__link:active {
 .b-trainer{
     margin-bottom: 36px;
     color: #000;
+}
+.b-trainer>div:first-child{
+    float: left;
 }
 .b-trainer__photo{
     margin-bottom: 20px;
@@ -4877,7 +4878,19 @@ a.b-change__link:hover, a.b-change__link:active {
         font-size: 14px;
     }
 }
-@media screen and (max-width: 48em){    /*768px*/
+@media screen and (max-width: 48em){    /*768px*/    
+    .b-training__addresses th{
+        font-size: 14px;
+    }
+    .b-training__addresses thead th:first-child{
+        width: 33%;
+    }
+    .b-training__addresses thead th:last-child{
+        width: auto;
+    }
+    .b-training__addresses td{
+        font-size: 14px;
+    }
     .b-lecture__container_link{
         max-width: 320px;
         margin-right: auto;
@@ -4885,6 +4898,9 @@ a.b-change__link:hover, a.b-change__link:active {
     }
 }
 @media screen and (max-width: 26em){    /*416px*/
+    .b-training__addresses thead th:first-child{
+        width: auto;
+    }
     .b-organizator__logo{
         float: none;
         display: block;
