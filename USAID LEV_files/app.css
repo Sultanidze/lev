@@ -4731,6 +4731,9 @@ a.b-change__link:hover, a.b-change__link:active {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.b-training__stage:nth-child(3n+1){
+    clear: left;
+}
 .b-training__stage:before{
     content: counter(stage);
     float: left;
