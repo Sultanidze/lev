@@ -4767,7 +4767,8 @@ a.b-change__link:hover, a.b-change__link:active {
 }
 .b-training__addresses thead th:first-child{
     padding-left: 10px;
-    width: 37%;
+    /*width: 37%;*/
+    width: auto;
 }
 .b-training__addresses thead th:last-child{
     width: 16%;
