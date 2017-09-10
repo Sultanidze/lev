@@ -395,9 +395,15 @@ h1, h2, h3, h4, h5, h6, .g-title, .b-hero__title, .b-events__title, .b-steps__ti
   font-size: 1.125rem; }
 
 .g-brand-color {
-  color: #004990; }
-
-b, strong {
+  color: #004990;
+}
+.g-brand-bgc{
+    background-color: #004990!important;
+}
+.g-regular{
+    font-weight: 400;
+}
+b, strong, .g-bold{
   font-weight: 700; }
 
 /* Links */
@@ -4409,6 +4415,10 @@ a.b-change__link:hover, a.b-change__link:active {
     box-sizing: border-box;
     padding-right: 30px;
 }
+.b-wrap_sideMenu-right{
+    float: right;
+    padding-left: 30px;
+}
 .b-sideMenu__list{
     padding-top: 1.125rem;
     padding-bottom: 2.25rem;
@@ -4668,8 +4678,11 @@ a.b-change__link:hover, a.b-change__link:active {
 }
 /* Editings 03.2017 end */
 
-/* Editings 05.2017 start*/
+/* Editings 05.2017 start */
 /* added bootstrap-grid.css */
+.page__content_institutions{
+    padding-bottom: 20px;
+}
 .b-sideMenu__item:first-child .b-sideMenuItem__link {
     height: 50px;
     line-height: 50px;
@@ -4874,9 +4887,6 @@ a.b-change__link:hover, a.b-change__link:active {
     -o-transform: translateY(-19px);
     transform: translateY(-19px);
 }
-.g-bold{
-    font-weight: 700;
-}
 @media screen and (max-width: 75em){    /*1200px*/
     .b-lecture__footer_link{
         font-size: 14px;
@@ -4913,3 +4923,323 @@ a.b-change__link:hover, a.b-change__link:active {
     }
 }
 /* Editings 05.2017 end */
+
+/* Editings 09.2017 start */
+/* institutions-catalog.html */
+p + .b-form_selects{
+    margin-top: 35px;
+}
+.b-form_selects{
+    padding: 15px 34px 0;
+    background-color: #004990;
+}
+.b-form_selects select{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+}
+.selectric-catalog{
+    margin: 0;
+}
+.selectric-catalog:first-child{
+    margin-top: 0;
+}
+.selectric-catalog:last-child{
+    margin-top: 0;
+}
+.selectric-catalog .selectric{
+    margin-bottom: 15px;
+    border: none;
+    background-color: #eceff1;
+}
+.selectric-catalog .label{
+    height: 33px;
+    line-height: 33px;
+}
+.selectric-catalog .button{
+    width: 40px;
+    height: 33px;
+    font-size: 14px;
+/*    line-height: 24px;*/
+    line-height: 33px;
+    color: #004990;
+    background-color: transparent;
+}
+.selectric-catalog .button:after{
+    content: none;
+/*    border-top-color: #004990;*/
+}
+.selectric-catalog .selectric-items li{
+    padding: 6px 0 6px 10px;
+}
+
+.b-table_institutions{
+    overflow: auto;
+    margin-bottom: 80px;
+    display: block;
+    overflow-x: auto;
+    color: #000;
+}
+.b-table_institutions th{
+    padding: 15px 32px 5px;
+    text-align: left;
+}
+.b-table_institutions th:first-child{
+/*    padding-left: 34px;*/
+}
+.b-table_institutions td{
+    vertical-align: top;
+    padding: 10px 32px;
+    border-bottom: 1px solid #eceff1;
+    text-align: center;
+    font-size: 14px;
+}
+.b-table_institutions td:not(:last-child):before{
+    content: '';
+    display: block;
+    height: 25px;
+}
+.b-table_institutions td:first-child{
+    width: 17%;
+    padding-left: 10px;
+    padding-right: 16px;
+}
+.b-table_institutions td:first-child:before{
+    background: url(../img/region.png) top no-repeat / auto 21px;
+}
+.b-table_institutions td:nth-child(2){
+    padding: 10px 20px;
+    width: 14%;
+}
+.b-table_institutions td:nth-child(2):before{
+    background: url(../img/calendar.png) top no-repeat / auto 23px;
+}
+.b-table_institutions td:nth-child(3){
+    padding: 10px;
+}
+.b-table_institutions td:nth-child(3):before{
+    background: url(../img/type.png) top no-repeat / auto 25px;
+}
+.b-table_institutions td:last-child{
+    width: 51%;
+    text-align: left;
+}
+.b-table_institutions ol{
+    padding-left: 15px;
+}
+
+.b-wrap_feedback-catalog{
+    margin-bottom: 60px;
+}
+
+.b-catalog__news{
+    clear: both;
+}
+/* institution-page.html */
+.b-table_institution{
+    display: block;
+    overflow: auto;
+    margin-bottom: 65px;
+    max-width: 778px;
+    color: #000;
+}
+.b-table_institution th{
+    padding-bottom: 25px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+}
+.b-table_institution td{
+    width: 20%;
+    padding: 0 5px;
+    text-align: center;
+}
+.b-table_institution tr:nth-child(2) td{
+    padding: 0 10px;
+    font-size: 14px;
+}
+.b-table_institution tr:nth-child(3) td{
+    padding: 0 5px 4px;
+    vertical-align: bottom;
+    height: 37px;
+    font-size: 12px;
+}
+.b-table_institution tr:nth-child(3) img{
+    max-height: 100%;
+}
+.b-table_institution tr:nth-child(4) td{
+    vertical-align: top;
+    font-weight: 600;
+}
+
+.b-institution__content{
+    padding-bottom: 45px;
+    font-size: 14px;
+    color: #000;
+/*    outline: 1px solid green;*/
+}
+
+.b-institution__heading{
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-left: 3px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.b-institution__heading_bright{
+    padding: 12px 30px;
+    color: #fff;
+}
+
+.b-institution__content ol,
+.b-institution__content ul{
+    padding-left: 17px;
+    list-style: none;    
+}
+.b-institution__content ol{
+    counter-reset: i;
+}
+.b-institution__content li{
+    counter-increment: i;
+    position: relative;
+}
+.b-institution__content ol li{
+    counter-increment: i;
+}
+.b-institution__content li:before{
+    position: absolute;
+    left: -15px;
+}
+.b-institution__content ol li:before{
+    content: counter(i)'.';
+    font-weight: 700;
+}
+.b-institution__content ul li:before{
+    content: '■';
+    font-size: 11px;
+    line-height: 20px;
+    color: #d11343;
+}
+
+.b-institution__content_large
+.b-institution__heading_bright{
+    max-width: 359px;
+}
+
+.b-institution__content_large
+li{
+    margin-bottom: 30px;
+}
+
+ul.b-institution__contacts{
+    margin-left: -45px;
+    margin-right: -45px;
+    padding-left: 0;
+}
+.b-institution__content ul.b-institution__contacts li{
+    float: left;
+    width: 33.33%;
+    padding: 0 45px;
+}
+.b-institution__content ul.b-institution__contacts li:nth-child(1){
+/*    padding-right: 0;*/
+}
+.b-institution__content ul.b-institution__contacts li:nth-child(2){
+    width: 41.33%;
+/*    padding-right: 0;*/
+}
+.b-institution__content ul.b-institution__contacts li:nth-child(3){
+    width: 25.33%;
+/*    padding-left: 50px;*/
+}
+.b-institution__content ul.b-institution__contacts li:nth-child(1) p{
+    padding-left: 46px;
+}
+.b-institution__content ul.b-institution__contacts li:nth-child(2) p{
+    padding-left: 51px;
+}
+.b-institution__content ul.b-institution__contacts li:nth-child(3) p{
+    float: right;
+    padding-left: 47px;
+}
+.b-institution__content ul.b-institution__contacts li:before{
+    content: '';
+    top: 0;
+    left: 0;
+}
+
+.b-institution__contacts p{
+    position: relative;
+    padding-left: 50px;
+    margin: 0;
+/*    outline: 1px solid red;*/
+}
+.b-institution__contacts a{
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width: 1199px){
+    ul.b-institution__contacts{
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    
+    .b-institution__content ul.b-institution__contacts li{
+        padding: 0 20px;
+    }
+    
+    .b-institution__content ul.b-institution__contacts li:nth-child(3) p{
+        float: none;
+    }
+}
+
+@media (max-width: 991px){
+    ul.b-institution__contacts{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    
+    .b-institution__content ul.b-institution__contacts li{
+        padding: 0 5px;
+    }
+    
+    .b-institution__content ul.b-institution__contacts li:nth-child(2){
+        width: 35.33%;
+    }
+    .b-institution__content ul.b-institution__contacts li:nth-child(3){
+        width: 31.33%;
+    }
+}
+
+@media (max-width: 767px){
+    .b-institution__content ul.b-institution__contacts li:nth-child(2){
+        width: 39.33%;
+    }
+    .b-institution__content ul.b-institution__contacts li:nth-child(3){
+        width: 27.33%;
+    }
+}
+
+@media (max-width: 600px){
+    .b-institution__content{
+        padding-bottom: 30px;
+    }
+    
+    ul.b-institution__contacts{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .b-institution__content ul.b-institution__contacts li{
+        padding: 0px;
+    }
+    .b-institution__content ul.b-institution__contacts li:nth-child(n){
+        width: 100%;
+    }
+    .b-institution__content ul.b-institution__contacts li:last-child{
+        margin-bottom: 0;
+    }
+}
+/* Editings 09.2017 end */

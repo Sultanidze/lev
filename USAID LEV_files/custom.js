@@ -154,7 +154,7 @@ jQuery(document).ready(function ($) {
     if ($('.js-tabs').length) { initTabs();}
 
     //----------------------------------
-    // edits march 2017 
+    // edits Yuri 2017 
     //----------------------------------
     // 
     // cat-1.psd catalogues.psd
@@ -188,6 +188,12 @@ jQuery(document).ready(function ($) {
     $(".b-sideMenu__item").hover(function(){
         $(this).children(".b-sideSubmenu").stop().slideToggle(300);
     })
-   // edits march 2017 end ---------------------------
+	
+	// відправка форми з селектами
+	$(".js-select_catalog").on("change", function(){
+		$(this).parents("form").trigger("submit");
+	});
+	
+   // edits Yuri 2017 end ---------------------------
    
 });

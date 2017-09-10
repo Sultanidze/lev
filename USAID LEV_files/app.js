@@ -618,6 +618,9 @@ jQuery(document).ready(function ($) {
     // Стилизация селектов
     //---------------------------------------------------------------------------------------
     $('.js-select').selectric();
+    $('.js-select_catalog').selectric({
+		arrowButtonMarkup: '<b class="button"><i class="icon-down-open"></i></b>'
+	});
 
     //
     // Вкладки
