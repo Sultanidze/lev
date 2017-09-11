@@ -4976,7 +4976,7 @@ p + .b-form_selects{
 
 .b-table_institutions{
     overflow: auto;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     display: block;
     overflow-x: auto;
     color: #000;
@@ -5033,10 +5033,13 @@ p + .b-form_selects{
     margin-bottom: 60px;
 }
 
-.b-catalog__news{
+.page__content_institutions .b-catalog__news{
     clear: both;
 }
-/* institution-page.html */
+.page__content_institutions .pagination{
+    margin-bottom: 50px;
+}
+/* ----- institution-page.html ----- */
 .b-table_institution{
     display: block;
     overflow: auto;
@@ -5047,9 +5050,15 @@ p + .b-form_selects{
 .b-table_institution th{
     padding-bottom: 25px;
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
 }
+.b-table_institution th .b-institution__heading{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
 .b-table_institution td{
     width: 20%;
     padding: 0 5px;
@@ -5081,11 +5090,11 @@ p + .b-form_selects{
 }
 
 .b-institution__heading{
-    margin-bottom: 20px;
-    padding-top: 5px;
+    margin-bottom: 25px;
+/*    padding-top: 5px;*/
     padding-left: 3px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
 }
 .b-institution__heading_bright{
     padding: 12px 30px;
@@ -5101,8 +5110,8 @@ p + .b-form_selects{
     counter-reset: i;
 }
 .b-institution__content li{
-    counter-increment: i;
     position: relative;
+    margin-bottom:5px;
 }
 .b-institution__content ol li{
     counter-increment: i;
@@ -5122,6 +5131,9 @@ p + .b-form_selects{
     color: #d11343;
 }
 
+.b-institution__content_large{
+    padding-bottom: 15px;
+}
 .b-institution__content_large
 .b-institution__heading_bright{
     max-width: 359px;
@@ -5129,44 +5141,37 @@ p + .b-form_selects{
 
 .b-institution__content_large
 li{
-    margin-bottom: 30px;
+    margin-bottom: 29px;
+    line-height: 25px;
 }
 
 ul.b-institution__contacts{
     margin-left: -45px;
     margin-right: -45px;
     padding-left: 0;
+    padding-bottom: 20px;
 }
-.b-institution__content ul.b-institution__contacts li{
+.b-institution__contacts li{
     float: left;
     width: 33.33%;
     padding: 0 45px;
+    line-height: normal;
 }
-.b-institution__content ul.b-institution__contacts li:nth-child(1){
+
+.b-institution__contacts li:nth-child(1){
 /*    padding-right: 0;*/
 }
-.b-institution__content ul.b-institution__contacts li:nth-child(2){
+.b-institution__contacts li:nth-child(2){
     width: 41.33%;
 /*    padding-right: 0;*/
 }
-.b-institution__content ul.b-institution__contacts li:nth-child(3){
+.b-institution__contacts li:nth-child(3){
     width: 25.33%;
 /*    padding-left: 50px;*/
 }
-.b-institution__content ul.b-institution__contacts li:nth-child(1) p{
-    padding-left: 46px;
-}
-.b-institution__content ul.b-institution__contacts li:nth-child(2) p{
-    padding-left: 51px;
-}
-.b-institution__content ul.b-institution__contacts li:nth-child(3) p{
-    float: right;
-    padding-left: 47px;
-}
+
 .b-institution__content ul.b-institution__contacts li:before{
-    content: '';
-    top: 0;
-    left: 0;
+    content: none;  
 }
 
 .b-institution__contacts p{
@@ -5174,6 +5179,39 @@ ul.b-institution__contacts{
     padding-left: 50px;
     margin: 0;
 /*    outline: 1px solid red;*/
+}
+.b-institution__contacts li:nth-child(1) p{
+    padding-left: 37px;
+}
+.b-institution__contacts li:nth-child(2) p{
+    padding-left: 42px;
+}
+.b-institution__contacts li:nth-child(3) p{
+    float: right;
+    padding-left: 38px;
+}
+
+.b-institution__contacts p:before{
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 0;
+}
+.b-institution__contacts li:nth-child(1) p:before{
+    width: 25px;
+    height: 26px;
+    background-image: url(../img/person.png);
+}
+.b-institution__contacts li:nth-child(2) p:before{
+    width: 27px;
+    height: 22px;
+    background-image: url(../img/address.png);
+}
+.b-institution__contacts li:nth-child(3) p:before{
+    
+    width: 24px;
+    height: 23px;
+    background-image: url(../img/email.png);
 }
 .b-institution__contacts a{
     text-decoration: none;
@@ -5197,12 +5235,12 @@ ul.b-institution__contacts{
 
 @media (max-width: 991px){
     ul.b-institution__contacts{
-        margin-left: -5px;
-        margin-right: -5px;
+        margin-left: -10px;
+        margin-right: -10px;
     }
     
     .b-institution__content ul.b-institution__contacts li{
-        padding: 0 5px;
+        padding: 0 10px;
     }
     
     .b-institution__content ul.b-institution__contacts li:nth-child(2){
