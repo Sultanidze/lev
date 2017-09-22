@@ -4683,11 +4683,19 @@ a.b-change__link:hover, a.b-change__link:active {
 .page__content_institutions{
     padding-bottom: 20px;
 }
+.page__content_institutions .b-sideMenu__item{
+    display: table;
+    min-height: 50px;
+    width: 100%;
+}
 .b-sideMenu__item:first-child .b-sideMenuItem__link {
-    height: 50px;
-    line-height: 50px;
+/*    height: 50px;*/
+/*    line-height: 50px;*/
+    line-height: normal;
 }
 .b-sideMenuItem__link{
+    display: table-cell;
+    vertical-align: middle;
     text-decoration: none;
 }
 .b-sideMenuItem__link:hover{
@@ -5006,20 +5014,20 @@ p + .b-form_selects{
     padding-right: 16px;
 }
 .b-table_institutions td:first-child:before{
-    background: url(../img/region.png) top no-repeat / auto 21px;
+    background: url(../img/region.png) no-repeat top / auto 21px;
 }
 .b-table_institutions td:nth-child(2){
     padding: 10px 20px;
     width: 14%;
 }
 .b-table_institutions td:nth-child(2):before{
-    background: url(../img/calendar.png) top no-repeat / auto 23px;
+    background: url(../img/calendar.png) no-repeat  top / auto 23px;
 }
 .b-table_institutions td:nth-child(3){
     padding: 10px;
 }
 .b-table_institutions td:nth-child(3):before{
-    background: url(../img/type.png) top no-repeat / auto 25px;
+    background: url(../img/type.png) no-repeat top / auto 25px;
 }
 .b-table_institutions td:last-child{
     width: 51%;
