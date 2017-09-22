@@ -153,11 +153,7 @@ jQuery(document).ready(function ($) {
     };
     if ($('.js-tabs').length) { initTabs();}
 
-    //----------------------------------
-    // edits Yuri 2017 
-    //----------------------------------
-    // 
-    // cat-1.psd catalogues.psd
+    
     $('#feedback').submit(function(e) {
         e.preventDefault();
         //alert($(this).serialize());
@@ -183,17 +179,4 @@ jQuery(document).ready(function ($) {
             });
 
     });
-    
-    //реалізуємо акордеон для відображення пунктів підменю 
-    $(".b-sideMenu__item").hover(function(){
-        $(this).children(".b-sideSubmenu").stop().slideToggle(300);
-    })
-	
-	// відправка форми з селектами
-	$(".js-select_catalog").on("change", function(){
-		$(this).parents("form").trigger("submit");
-	});
-	
-   // edits Yuri 2017 end ---------------------------
-   
 });
